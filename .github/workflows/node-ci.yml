@@ -19,11 +19,12 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Ver entorno
+        run: echo "Entorno actual: ${{ secrets.NODE_ENV }}"
+
       - name: Instalar dependencias
         run: npm install
 
       - name: Ejecutar pruebas
         run: npm test
-
-      - name: Ver entorno
-        run: echo "Entorno actual: ${{ secrets.NODE_ENV }}"
+        

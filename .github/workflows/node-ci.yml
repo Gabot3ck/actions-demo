@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Ver entorno
-        run: echo "Entorno actual: ${{ secrets.NODE_ENV || 'development' }}"
-
       - name: Instalar dependencias
         run: npm install
 
